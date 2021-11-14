@@ -1,0 +1,34 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+
+//Creating the Node
+struct node{
+   string str;
+   int x;
+   double d;
+   char c;
+   
+   
+   //Initializing with constructor
+   node(string str_, int x_, double d_, char c_){
+       str = str_;
+       x = x_;
+       d = d_;
+       c = c_;
+   }
+};
+
+int main()
+{
+    
+    //Using 'new' keyword to initialize a node pointer with constructor
+    node* raj = new node("Sandip",27,69.3,'D');
+    
+    //without using 'new' keyword initializing with constructor
+    node raj2 = node("S",272,639.2,'E');
+    
+    cout<<raj->str<<" "<<raj->x<<" "<<raj->d<<" "<<raj->c<<endl;
+    cout<<raj2.str<<" "<<raj2.x<<" "<<raj2.d<<" "<<raj2.c<<endl;
+    return 0;
+}
